@@ -85,7 +85,7 @@ def predict_start(dataset:str, model):
     asr = (accuracy_test - accuracy_dataset) / accuracy_test
     # '''for ASR in precentage, comment the below line if not needed in percent'''
     asr_per = asr * 100
-    return {"Test Accuracy": accuracy_test, "Dataset Accuracy": accuracy_dataset, "ASR": asr, "ASR Percent": asr_per}
+    return {"Accuracy before Attack": accuracy_test, "Accuracy after Attack": accuracy_dataset, "ASR": asr, "ASR Percent": asr_per}
     accuracy_test_percent = accuracy_test * 100
     accuracy_dataset_percent = accuracy_dataset * 100
 
